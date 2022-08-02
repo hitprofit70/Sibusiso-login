@@ -16,15 +16,40 @@
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                   </svg>
             </span><br>
-             <input type="text" id="usernames" placeholder="Username">
+            <div class="form__message form__message--error">Incorrect username/password combination.</div>
+             <input type="text" id="usernames" placeholder="Username or email">
+             <div class="form__input-error-message">This is an error message.</div>
             <br>
             <input type="text" id="passwords" placeholder="Password">
+            <div class="form__input-error-message">This is an error message.</div>
             <br>
             <button class="btn" onclick="addButton()">Login Here</button>
             <br>
-            <label>Forget password?</label>
+            <a href="#">Forget your password?</a>
             <br>
-            <label>Already have account</label>
+            <a href="./" id="linkAcount">Don't have an account? Create account</a>
+        </div>
+        <div class="form">
+            <h1>Create Account</h1>
+            
+            <div class="form__message form__message--error">Incorrect username/password combination.</div>
+             <input type="text" id="usernames" placeholder="Username or email">
+             <div class="form__input-error-message">This is an error message.</div>
+            <br>
+            <input type="text" id="emailAddress" placeholder="Email Address">
+            <div class="form__input-error-message">This is an error message.</div>
+            <br>
+
+            <input type="text" id="passwords" placeholder="password">
+            <div class="form__input-error-message">This is an error message.</div>
+            <br>
+
+            <input type="text" id="confirm" placeholder="Confirm password">
+            <div class="form__input-error-message">This is an error message.</div>
+            <br>
+            <button class="btn" onclick="addAccount()">Create account</button> 
+
+            <a href="./" id="linkAcount">Already have an account? Sign in</a>
         </div>
     
     <script src="./login.js"></script>
