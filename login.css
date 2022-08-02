@@ -1,10 +1,14 @@
 body{
     box-sizing: border-box;
-    background: grey;
+    background-image: url(./img/Hawaii-Volcanoes-National-Park_1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 form{
-    background: rgb(240, 236, 230);
+    background: rgba(240, 236, 230, 0.374);
     width: 400px;
     height: 450px;
     gap: 3rem;
@@ -12,6 +16,7 @@ form{
     margin-right: auto;
     margin-top: 200px;
     border-radius: 5px;
+    padding: 10px;
 }
 
 form h1{
@@ -45,7 +50,7 @@ input{
 
 }
 .btn:hover{
-    background: rgb(240, 236, 230);
+    background: rgba(12, 12, 11, 0);
     transform: scale(1.1);
     transition: 0s;
 }
