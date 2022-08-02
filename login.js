@@ -1,22 +1,26 @@
-// var username;
-// var password;
-
-
-// function Validlogin(value) {
-//     if (!value) { false
-//         return
-//     } true
-// }
-
-// function inputTwousers() {
-//     username = document.getElementById('username').value
-//     password = document.getElementById('password').value
-// }
-
-function addSubmit() {
-    console.log('Login form created by Sibusiso');
+function inputTwousers() {
+    usernameS = document.getElementById('usernames').value
+    passwordS = document.getElementById('passwords').value
 }
 
-// function displayonScreen() {}
+function clearUsers() {
+    document.getElementById('usernames').value = '';
+    document.getElementById('passwords').value = '';
+}
 
-// displayonScreen();
+
+
+function addButton() {
+    inputTwousers();
+    clearUsers();
+
+    if (usernameS == "admins" && passwordS == "users") {
+      
+        
+        alert("Login sucessfully");
+        return false;
+
+    } else {
+        alert("Login failed");
+    }
+}
